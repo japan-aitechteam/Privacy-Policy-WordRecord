@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SnapVocab Privacy Policy / プライバシーポリシー">
+  <title>SnapVocab Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #f6f7fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --accent: #2563eb;
+      --accent-soft: #eff6ff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue",
+                   "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+      line-height: 1.75;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    .page {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 32px 20px 64px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 36px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.04);
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      align-items: flex-start;
+      margin-bottom: 28px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(1.8rem, 4vw, 2.5rem);
+      line-height: 1.2;
+    }
+
+    .subtitle, .updated {
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .lang-switch {
+      display: inline-flex;
+      padding: 4px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: #f9fafb;
+      flex-shrink: 0;
+    }
+
+    .lang-switch button {
+      appearance: none;
+      border: 0;
+      border-radius: 9px;
+      padding: 9px 14px;
+      background: transparent;
+      color: var(--text);
+      cursor: pointer;
+      font: inherit;
+      font-weight: 600;
+    }
+
+    .lang-switch button.active {
+      background: var(--accent);
+      color: white;
+    }
+
+    h2 {
+      font-size: 1.22rem;
+      margin: 2.1em 0 .7em;
+      padding-bottom: .45em;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h3 {
+      font-size: 1.05rem;
+      margin: 1.5em 0 .45em;
+    }
+
+    p { margin: .75em 0; }
+    ul { padding-left: 1.5em; }
+    li { margin: .35em 0; }
+
+    a {
+      color: var(--accent);
+      overflow-wrap: anywhere;
+    }
+
+    .notice {
+      margin: 1.2em 0;
+      padding: 14px 16px;
+      border-left: 4px solid var(--accent);
+      background: var(--accent-soft);
+      border-radius: 8px;
+    }
+
+    .language[hidden] { display: none !important; }
+
+    footer {
+      margin-top: 36px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: .92rem;
+    }
+
+    @media (max-width: 700px) {
+      .page { padding: 0; }
+      .card {
+        border-radius: 0;
+        border-left: 0;
+        border-right: 0;
+        padding: 24px 20px 40px;
+        min-height: 100vh;
+      }
+      .topbar {
+        flex-direction: column;
+      }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f1115;
+        --card: #171a21;
+        --text: #f3f4f6;
+        --muted: #a1a1aa;
+        --border: #2a2f39;
+        --accent: #7aa2ff;
+        --accent-soft: #172554;
+      }
+      .lang-switch { background: #111318; }
+      .lang-switch button.active {
+        background: var(--accent);
+        color: #111827;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+  <main class="card">
+    <div class="topbar">
+      <div>
+        <h1>SnapVocab</h1>
+        <p class="subtitle">Privacy Policy / プライバシーポリシー</p>
+      </div>
+      <div class="lang-switch" aria-label="Language">
+        <button id="btn-ja" type="button" onclick="setLanguage('ja')">日本語</button>
+        <button id="btn-en" type="button" onclick="setLanguage('en')">English</button>
+      </div>
+    </div>
+
+    <section id="ja" class="language" lang="ja">
+      <p class="updated">最終更新日：2026年8月26日</p>
+
+      <p>
+        AI Tech Apps（以下「当社」または「開発者」）は、iOSアプリ「SnapVocab」
+        （以下「本アプリ」）におけるユーザー情報の取扱いについて、以下のとおり
+        プライバシーポリシーを定めます。
+      </p>
+
+      <h2>1. 本アプリについて</h2>
+      <p>
+        SnapVocabは、ユーザーがカメラで撮影した画像または写真ライブラリから選択した画像に含まれる
+        英単語・フレーズ等を読み取り、意味、関連表現、イディオム、例文等の学習情報を生成し、
+        単語帳として保存・閲覧できる語学学習アプリです。
+      </p>
+
+      <h2>2. 取得または取り扱う情報</h2>
+      <p>本アプリでは、機能提供のために以下の情報を取得または取り扱う場合があります。</p>
+      <ul>
+        <li>カメラで撮影した画像</li>
+        <li>ユーザーが写真ライブラリから選択した画像</li>
+        <li>画像から抽出された文字、英単語、フレーズ等</li>
+        <li>単語の意味、関連表現、イディオム、例文等の生成結果</li>
+        <li>ユーザーが単語帳に保存した学習データ</li>
+        <li>Google AdMob等の広告サービスにより自動的に取得される場合がある情報（端末情報、広告識別子（IDFA。取得可能かつ許可されている場合に限る）、IPアドレス、IPアドレス等から推定される概算地域、広告の表示・操作情報等）</li>
+        <li>同意管理に必要な情報（広告・プライバシーに関する同意または選択状況等）</li>
+        <li>アプリの利用状況、クラッシュ・診断情報その他サービス提供に必要な技術情報</li>
+      </ul>
+
+      <h2>3. カメラおよび写真ライブラリ</h2>
+      <p>
+        本アプリは、画像から単語等を読み取るため、ユーザーの許可を得た上でカメラまたは写真ライブラリにアクセスします。
+        アクセスは、本アプリの画像解析・単語登録機能を提供する目的で使用されます。
+      </p>
+
+      <h2>4. AI・外部APIによる処理</h2>
+      <p>
+        本アプリは、画像解析、単語・フレーズの抽出、意味・例文・関連表現等の生成のため、
+        OpenAI API等の外部AIサービスを利用する場合があります。
+        その場合、ユーザーが選択した画像、画像から抽出したテキスト、単語、フレーズ、
+        および処理に必要な入力情報が外部サービスへ送信されることがあります。
+      </p>
+      <p>
+        これらの情報は、本アプリの機能を提供するために必要な範囲で送信されます。
+        個人情報や機密情報を含む画像を送信する場合は、内容をご確認の上で本アプリをご利用ください。
+      </p>
+
+      <h2>5. 広告配信</h2>
+      <p>
+        本アプリでは、Google AdMob（Google Mobile Ads SDK）を利用して広告を表示します。
+        Google AdMob等の広告サービスは、広告の配信、測定、不正防止、頻度管理、パーソナライズ等のため、
+        端末情報、広告識別子（IDFA。取得可能かつ許可されている場合に限る）、IPアドレス、
+        IPアドレス等から推定される概算地域、広告の表示・操作情報等を自動的に取得または処理する場合があります。
+      </p>
+      <p>
+        本アプリ自体が、広告配信のためにGPS等を用いた正確な位置情報を取得して広告事業者へ送信するものではありません。
+        ただし、Google Mobile Ads SDK等の第三者サービスが、IPアドレス等を基に端末のおおまかな地域を推定する場合があります。
+      </p>
+      <p>
+        パーソナライズ広告の可否や利用される情報は、ユーザーの地域、同意状況、端末設定、
+        App Tracking Transparency（ATT）の許可状況等によって異なります。
+      </p>
+
+      <h2>6. App Tracking Transparency（ATT）</h2>
+      <p>
+        iOS 14.5以降、本アプリがAppleの定義する「トラッキング」に該当する目的でIDFAを取得または利用する場合、
+        App Tracking Transparencyフレームワークを通じて事前にユーザーの許可を求めます。
+      </p>
+      <ul>
+        <li>ユーザーが許可しない場合、本アプリはATTの許可を必要とするIDFAベースのトラッキングを行いません。</li>
+        <li>ATTを許可しなくても、本アプリの主要な単語帳機能は利用できます。</li>
+        <li>ATTの設定は、iOSの「設定」から後で変更できます。</li>
+      </ul>
+
+      <h2>7. GDPR等に基づく同意管理</h2>
+      <p>
+        欧州経済領域（EEA）、英国、スイス等、同意取得が必要な地域では、
+        Google User Messaging Platform（UMP）等を利用して、広告および関連するデータ処理について
+        同意メッセージまたはプライバシー設定を表示する場合があります。
+      </p>
+      <p>対象となるユーザーは、表示されるメッセージを通じて、利用可能な範囲で以下の選択を行うことができます。</p>
+      <ul>
+        <li>広告目的等のデータ利用への同意または拒否</li>
+        <li>パーソナライズ広告に関する選択</li>
+        <li>同意内容の確認または変更</li>
+      </ul>
+      <p>
+        同意の法的根拠、利用可能な選択肢、処理主体等の詳細は、Googleおよび各広告パートナーが表示する
+        同意メッセージやプライバシー情報にも従います。
+      </p>
+
+      <h2>8. 米国州プライバシー法への対応</h2>
+      <p>
+        カリフォルニア州を含む、適用される米国州のプライバシー法に基づき、
+        ユーザーにオプトアウトその他のプライバシー上の選択肢を提供する必要がある場合、
+        本アプリはGoogle UMP等を通じて「Privacy Options」等のメッセージまたは設定画面を表示する場合があります。
+      </p>
+      <p>
+        広告関連データの処理が、適用法上「sale（売却）」または「sharing（共有）」等に該当するとみなされる場合、
+        対象ユーザーには、適用法令および利用可能な仕組みに従って選択肢を提供します。
+      </p>
+
+      <h2>9. 第三者サービス</h2>
+      <p>本アプリでは、主に以下の第三者サービスを利用する場合があります。</p>
+      <ul>
+        <li>
+          Google AdMob / Google Mobile Ads SDK / User Messaging Platform（広告配信・同意管理）<br>
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google プライバシーポリシー</a>
+        </li>
+        <li>
+          OpenAI API（画像・テキスト解析、学習情報の生成）<br>
+          <a href="https://openai.com/policies/privacy-policy/" target="_blank" rel="noopener noreferrer">OpenAI Privacy Policy</a>
+        </li>
+      </ul>
+      <p>
+        各第三者サービスによる情報の取扱いは、それぞれのプライバシーポリシーおよび利用条件にも従います。
+      </p>
+
+      <h2>10. 情報の利用目的</h2>
+      <ul>
+        <li>画像内の文字、英単語、フレーズ等を解析するため</li>
+        <li>意味、例文、イディオム、関連表現等の学習情報を生成するため</li>
+        <li>単語帳データを保存・表示するため</li>
+        <li>広告を配信し、その効果を測定するため</li>
+        <li>法令・プラットフォーム要件に応じた広告・プライバシー同意を管理するため</li>
+        <li>不正利用の防止、セキュリティ確保、不具合調査、サービス品質の改善のため</li>
+      </ul>
+
+      <h2>11. 情報の保存</h2>
+      <ul>
+        <li>単語帳に登録した単語、意味、例文等の学習データは、原則としてユーザー端末上に保存されます。</li>
+        <li>画像やテキストは、AI・API処理のために必要な範囲で外部サービスへ送信される場合があります。</li>
+        <li>外部サービスに送信された情報の保存期間等は、各サービスのポリシーに従います。</li>
+        <li>広告・同意関連情報は、Googleその他の広告関連サービスにより、そのサービスのポリシーに従って処理される場合があります。</li>
+      </ul>
+
+      <h2>12. 第三者提供・販売について</h2>
+      <p>
+        開発者は、ユーザーの個人情報を独自に名簿等として販売することを目的として第三者に提供しません。
+        ただし、AI処理、広告配信、同意管理等の機能を提供するため、必要な情報が第三者サービスに送信されることがあります。
+      </p>
+      <p>
+        広告関連の情報処理が特定の法域において「売却」「共有」等に該当する場合は、
+        適用法令に従って必要な通知および選択手段を提供します。
+      </p>
+
+      <h2>13. ユーザーの選択と権利</h2>
+      <p>適用される法令および本アプリの提供地域に応じて、ユーザーには以下の権利または選択肢が認められる場合があります。</p>
+      <ul>
+        <li>個人データへのアクセス、訂正、削除等の請求</li>
+        <li>一定の処理に対する異議申立てまたは制限の請求</li>
+        <li>同意に基づく処理について、将来に向かって同意を撤回すること</li>
+        <li>対象となる広告関連の売却・共有等からオプトアウトすること</li>
+      </ul>
+      <p>
+        アプリ内にプライバシー設定または「Privacy Options」が表示される場合は、そこから設定を確認・変更できます。
+        その他の請求については、本ポリシー末尾の連絡先までお問い合わせください。
+      </p>
+
+      <h2>14. セキュリティ</h2>
+      <p>
+        本アプリは、HTTPS等の暗号化通信を利用するなど、情報を適切に保護するための合理的な安全管理措置に努めます。
+        ただし、インターネット上の通信や電子的な保存について完全な安全性を保証するものではありません。
+      </p>
+
+      <h2>15. 未成年者</h2>
+      <p>
+        未成年者が本アプリを利用する場合は、必要に応じて保護者の同意または指導のもとで利用してください。
+        本アプリが法令上の子ども向けサービスに該当する場合は、適用される法令および広告プラットフォームの要件に従います。
+      </p>
+
+      <h2>16. 本ポリシーの変更</h2>
+      <p>
+        本ポリシーは、法令、プラットフォーム要件、本アプリの機能、利用する第三者サービス等の変更に応じて改定することがあります。
+        重要な変更がある場合は、本ページその他適切な方法によりお知らせします。
+      </p>
+
+      <h2>17. お問い合わせ</h2>
+      <p>
+        開発者名：AI Tech Apps<br>
+        メールアドレス：
+        <a href="mailto:aitech.apps00001111@gmail.com">aitech.apps00001111@gmail.com</a>
+      </p>
+
+      <div class="notice">
+        本ポリシーに記載する広告・同意関連の処理は、ユーザーの地域、端末設定、ATTの許可状況、
+        Google UMPでの選択等によって異なる場合があります。
+      </div>
+    </section>
+
+    <section id="en" class="language" lang="en" hidden>
+      <p class="updated">Last updated: August 26, 2026</p>
+
+      <p>
+        AI Tech Apps ("we," "us," or the "Developer") establishes this Privacy Policy to explain
+        how information is handled in the iOS application SnapVocab (the "App").
+      </p>
+
+      <h2>1. About SnapVocab</h2>
+      <p>
+        SnapVocab is a language-learning application that allows users to capture an image with the camera
+        or select an image from the photo library, identify English words and phrases contained in the image,
+        generate learning information such as meanings, related expressions, idioms, and example sentences,
+        and save the results as vocabulary cards.
+      </p>
+
+      <h2>2. Information We Collect or Process</h2>
+      <p>Depending on the features used, the App may collect or process the following information:</p>
+      <ul>
+        <li>Images captured with the camera</li>
+        <li>Images selected by the user from the photo library</li>
+        <li>Text, English words, and phrases extracted from images</li>
+        <li>Generated meanings, related expressions, idioms, example sentences, and other learning content</li>
+        <li>Vocabulary and learning data saved by the user</li>
+        <li>Information that may be collected automatically by advertising services such as Google AdMob, including device information, the advertising identifier (IDFA, when available and permitted), IP address, approximate location inferred from IP address or similar signals, and ad impression or interaction data</li>
+        <li>Consent and privacy-choice information used for advertising and privacy compliance</li>
+        <li>Usage, crash, diagnostic, and other technical information necessary to operate and improve the App</li>
+      </ul>
+
+      <h2>3. Camera and Photo Library Access</h2>
+      <p>
+        The App may request permission to access the camera or photo library so that words and phrases can be
+        identified from images. Such access is used to provide the App's image-analysis and vocabulary features.
+      </p>
+
+      <h2>4. AI and External API Processing</h2>
+      <p>
+        The App may use external AI services, including the OpenAI API, to analyze images or text and to generate
+        meanings, example sentences, idioms, related expressions, and other learning information.
+        When required for these features, images selected by the user, extracted text, words, phrases,
+        and related input may be transmitted to such external services.
+      </p>
+      <p>
+        Information is transmitted only to the extent reasonably necessary to provide the requested functionality.
+        Users should review the content of an image before submitting it if the image contains personal,
+        confidential, or sensitive information.
+      </p>
+
+      <h2>5. Advertising</h2>
+      <p>
+        The App uses Google AdMob (Google Mobile Ads SDK) to display advertisements.
+        Advertising services such as Google AdMob may automatically collect or process device information,
+        the advertising identifier (IDFA, when available and permitted), IP addresses,
+        approximate location inferred from IP address or similar signals, ad impressions, ad interactions,
+        and similar information for purposes such as ad delivery, measurement, fraud prevention,
+        frequency capping, and personalization.
+      </p>
+      <p>
+        The App itself does not collect and send precise GPS-based location information to advertising providers
+        for advertising purposes. However, third-party services such as the Google Mobile Ads SDK may infer
+        an approximate location from an IP address or similar signals.
+      </p>
+      <p>
+        Whether personalized advertising is available, and which information may be used, can depend on the user's
+        region, consent choices, device settings, and App Tracking Transparency ("ATT") permission status.
+      </p>
+
+      <h2>6. App Tracking Transparency (ATT)</h2>
+      <p>
+        On iOS 14.5 and later, if the App seeks to access or use IDFA for a purpose that constitutes "tracking"
+        under Apple's rules, the App will request permission through Apple's App Tracking Transparency framework
+        before engaging in such tracking.
+      </p>
+      <ul>
+        <li>If permission is denied, the App will not engage in IDFA-based tracking that requires ATT permission.</li>
+        <li>Declining ATT permission does not prevent use of the App's core vocabulary-learning features.</li>
+        <li>ATT choices can be changed later in iOS Settings.</li>
+      </ul>
+
+      <h2>7. GDPR and Consent Management</h2>
+      <p>
+        In regions where consent is required, including the European Economic Area (EEA), the United Kingdom,
+        and Switzerland, the App may use Google User Messaging Platform ("UMP") to present consent messages
+        or privacy controls for advertising and related data processing.
+      </p>
+      <p>Depending on availability and applicable law, users may be able to:</p>
+      <ul>
+        <li>Consent to or refuse certain advertising-related data processing</li>
+        <li>Make choices regarding personalized advertising</li>
+        <li>Review or modify previously selected consent choices</li>
+      </ul>
+      <p>
+        The applicable legal basis, available choices, data controllers or processors, and other details may also
+        be described in the consent message and privacy information provided by Google and its advertising partners.
+      </p>
+
+      <h2>8. U.S. State Privacy Laws</h2>
+      <p>
+        Where required by applicable U.S. state privacy laws, including laws applicable to California residents,
+        the App may use Google UMP or similar mechanisms to provide a "Privacy Options" message or other controls
+        that enable eligible users to exercise applicable privacy choices.
+      </p>
+      <p>
+        If advertising-related processing is treated as a "sale," "sharing," or similar regulated activity under
+        applicable law, eligible users will be provided with available notice and opt-out mechanisms as required
+        by applicable law and supported by the services used in the App.
+      </p>
+
+      <h2>9. Third-Party Services</h2>
+      <p>The App may use the following third-party services:</p>
+      <ul>
+        <li>
+          Google AdMob / Google Mobile Ads SDK / User Messaging Platform
+          (advertising and consent management)<br>
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>
+        </li>
+        <li>
+          OpenAI API (image/text analysis and generation of learning content)<br>
+          <a href="https://openai.com/policies/privacy-policy/" target="_blank" rel="noopener noreferrer">OpenAI Privacy Policy</a>
+        </li>
+      </ul>
+      <p>
+        Information handled by third-party services is also subject to their respective privacy policies
+        and terms of service.
+      </p>
+
+      <h2>10. Purposes of Processing</h2>
+      <ul>
+        <li>To analyze text, English words, and phrases contained in images</li>
+        <li>To generate meanings, example sentences, idioms, and related expressions</li>
+        <li>To save and display vocabulary-learning data</li>
+        <li>To deliver and measure advertisements</li>
+        <li>To manage advertising and privacy consent as required by law or platform rules</li>
+        <li>To prevent abuse, maintain security, diagnose issues, and improve the quality of the App</li>
+      </ul>
+
+      <h2>11. Storage and Retention</h2>
+      <ul>
+        <li>Vocabulary data such as saved words, meanings, and example sentences is generally stored on the user's device.</li>
+        <li>Images or text may be transmitted to external AI/API services to the extent necessary to process a user request.</li>
+        <li>Retention of information transmitted to external services is governed by the policies of those services.</li>
+        <li>Advertising and consent-related information may be processed and retained by Google or other advertising-related services according to their policies.</li>
+      </ul>
+
+      <h2>12. Disclosure, Sale, and Sharing</h2>
+      <p>
+        We do not independently sell users' personal information as a customer list or for similar purposes.
+        However, information may be transmitted to third-party services as needed to provide AI processing,
+        advertising, consent management, and related functionality.
+      </p>
+      <p>
+        If advertising-related processing is considered a "sale," "sharing," or similar activity in a particular
+        jurisdiction, we will provide applicable notices and available choices as required by law.
+      </p>
+
+      <h2>13. Your Choices and Rights</h2>
+      <p>
+        Depending on your location and applicable law, you may have rights or choices including:
+      </p>
+      <ul>
+        <li>Requesting access to, correction of, or deletion of applicable personal data</li>
+        <li>Objecting to or requesting restriction of certain processing</li>
+        <li>Withdrawing consent for future processing where processing is based on consent</li>
+        <li>Opting out of certain advertising-related sales, sharing, or targeted advertising where applicable</li>
+      </ul>
+      <p>
+        If a privacy settings or "Privacy Options" entry is available in the App, you can use it to review or modify
+        available choices. For other requests, please contact us using the details below.
+      </p>
+
+      <h2>14. Security</h2>
+      <p>
+        We use reasonable safeguards, including encrypted HTTPS communications where applicable, to protect information.
+        However, no method of Internet transmission or electronic storage can be guaranteed to be completely secure.
+      </p>
+
+      <h2>15. Children and Minors</h2>
+      <p>
+        Minors should use the App with parental or guardian consent or guidance where appropriate.
+        If the App is deemed directed to children under applicable law, we will follow applicable legal requirements
+        and advertising-platform policies.
+      </p>
+
+      <h2>16. Changes to This Privacy Policy</h2>
+      <p>
+        We may update this Privacy Policy to reflect changes in law, platform requirements, App functionality,
+        or third-party services. Material changes will be communicated through this page or another appropriate method.
+      </p>
+
+      <h2>17. Contact</h2>
+      <p>
+        Developer: AI Tech Apps<br>
+        Email:
+        <a href="mailto:aitech.apps00001111@gmail.com">aitech.apps00001111@gmail.com</a>
+      </p>
+
+      <div class="notice">
+        Advertising and consent-related processing may differ depending on the user's region, device settings,
+        ATT permission status, and choices made through Google UMP or similar privacy controls.
+      </div>
+    </section>
+
+    <footer>
+      © 2026 AI Tech Apps
+    </footer>
+  </main>
+</div>
+
+<script>
+  function setLanguage(lang) {
+    const ja = document.getElementById('ja');
+    const en = document.getElementById('en');
+    const jaButton = document.getElementById('btn-ja');
+    const enButton = document.getElementById('btn-en');
+
+    const isJa = lang === 'ja';
+    ja.hidden = !isJa;
+    en.hidden = isJa;
+
+    jaButton.classList.toggle('active', isJa);
+    enButton.classList.toggle('active', !isJa);
+
+    document.documentElement.lang = isJa ? 'ja' : 'en';
+    document.title = isJa
+      ? 'SnapVocab プライバシーポリシー'
+      : 'SnapVocab Privacy Policy';
+
+    try {
+      localStorage.setItem('snapvocab-language', lang);
+    } catch (_) {}
+  }
+
+  (function () {
+    let saved = null;
+    try {
+      saved = localStorage.getItem('snapvocab-language');
+    } catch (_) {}
+
+    if (saved === 'ja' || saved === 'en') {
+      setLanguage(saved);
+      return;
+    }
+
+    const browserLang = (navigator.language || '').toLowerCase();
+    setLanguage(browserLang.startsWith('ja') ? 'ja' : 'en');
+  })();
+</script>
+</body>
+</html>
